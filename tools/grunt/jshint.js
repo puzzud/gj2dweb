@@ -11,8 +11,8 @@ module.exports = function (grunt, tasks) {
         // The files that we want to check.
         dist: {
             src: [
-                grunt.uriSrc + '*.js', // Include all JS files in this directory.
-                '!' + grunt.uriSrc + '*.min.js' // Exclude any files ending with `.min.js`
+                grunt.uriGame + '*.js', // Include all JS files in this directory.
+                '!' + grunt.uriGame + '*.min.js' // Exclude any files ending with `.min.js`
             ]
         }
     };
