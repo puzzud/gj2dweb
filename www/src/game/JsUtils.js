@@ -1,3 +1,5 @@
+/*jshint -W069*/
+
 // Function to facilitate Javascript "class" inheritence.
 function extend( subConstructor, superConstructor )
 {
@@ -15,7 +17,7 @@ function extend( subConstructor, superConstructor )
   subConstructor.prototype = Object.create( superConstructor.prototype, constructor );
 }
 
-window["extend"] = extend;
+window["extend"] = extend; // Google Closure
 
 // Function to provide traditional string comparison.
 // Returns -1, if string1 < string2.
@@ -26,4 +28,4 @@ function strcmp( string1, string2 )
   return string1 < string2 ? -1 : ( string1 > string2 ? 1 : 0 );
 }
 
-window["strcmp"] = strcmp;
+window["strcmp"] = strcmp; // Google Closure
