@@ -18,9 +18,9 @@ module.exports = function (grunt) {
     tasks.concat = {};
 
     // Lint Tasks
-    tasks = require(grunt.uriTask + 'css-lint.js')(grunt, tasks);
-    tasks = require(grunt.uriTask + 'html-lint.js')(grunt, tasks);
-    tasks = require(grunt.uriTask + 'js-lint.js')(grunt, tasks);
+    tasks = require(grunt.uriTask + 'csslint.js')(grunt, tasks);
+    tasks = require(grunt.uriTask + 'htmllint.js')(grunt, tasks);
+    tasks = require(grunt.uriTask + 'jshint.js')(grunt, tasks);
 
     // Concatenation Tasks
     //tasks = require(grunt.uriTask + 'css-concat.js')(grunt, tasks);
