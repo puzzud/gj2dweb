@@ -129,7 +129,8 @@ GameTitle.cycleActiveButton = function( direction )
   }
   else
   {
-    var currentIndex = index = state.buttonList.indexOf( GameTitle.activeButton );
+    index = state.buttonList.indexOf( GameTitle.activeButton );
+    var currentIndex = index;
 
     index += direction;
     if( index >= state.buttonList.length )
